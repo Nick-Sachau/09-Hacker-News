@@ -1,2 +1,30 @@
-@use './components';
-@use './theme';
+@use './components/' as *;
+@use './theme' as *;
+
+
+body {
+    background: $dark-primary-9;
+}
+
+p {
+    color: $clr-primary-4;
+}
+
+h2 {
+    color: $clr-primary-2;
+}
+
+
+.card-container {
+    display: flex;
+    justify-content: center;
+    flex-flow: column;
+    flex-wrap: wrap;
+}
+
+.card {
+    width: 350px;
+    margin: 15px;
+    border-radius: 10px;
+    background: $clr-white;
+}
